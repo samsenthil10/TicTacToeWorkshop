@@ -2,10 +2,10 @@ package com.bridgelabz.tictactoe;
 
 public class TicTacToe {
 	
-	public char[] board= new char[11];
+	public char[] board= new char[10];
 	
 	public void initializeBoard() {
-		for(int index =1;index<11;index++) {
+		for(int index = 1;index<10;index++) {
 			board[index] = ' ';
 		}
 	}
