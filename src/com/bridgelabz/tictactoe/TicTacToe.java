@@ -32,12 +32,22 @@ public class TicTacToe {
 			System.out.println("Invalid Choice!");
 		}	
 	}
+	public static void printBoardFirstTime() {
+		
+		for(int index=1;index<10;index++) {
+			if(index%3==0)
+				System.out.println();
+			System.out.print(board[index]);
+		}
+	}
+	
 	public static void main(String[] args) {
 
 		System.out.println("Welcome to Tic Tac Toe program: ");
 		System.out.println();
 		initializeBoard();
 		chooseCharacter();
+		printBoardFirstTime();
 
 	}
 }
